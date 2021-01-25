@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html, body {
+    min-height: 100vh;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    color: var(--fg-color)
+}
+
+:root {
+    --bg-color: #FBFBFB;
+    --fg-color: #252C32;
+    --fg-secondary-color: #b4b4b4;
+    --primary-color: #007BFF;
+    --primary-color-light: #a6d1ff;
+    --border-radius: 3px;
+    --box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.08);
+    --green-color: #6eb395;
+    --red-color: #C95A6E;
+}

@@ -102,17 +102,22 @@ export default {
         }
 
         onMounted(async() => {
-            loading.value = true
-            api.value = await getTeams()
-            loading.value = false
-            selectedteam.value = api.value[0].id
-            // console.log(selectedteam.value)
+            try {
+                loading.value = true
+                api.value = await getTeams()
+                loading.value = false
+                selectedteam.value = api.value[0].id
+                // console.log(selectedteam.value)
 
-            currentteam.value = api.value.find((group) => {
-                // console.log(group.id)
-                return group.id == selectedteam.value
-            })
-            console.log(currentteam.value)
+                currentteam.value = api.value.find((group) => {
+                    // console.log(group.id)
+                    return group.id == selectedteam.value
+                })
+                console.log(currentteam.value)
+            } catch (error) {
+                alert("Something went wrong")
+            }
+            
         })
         return {
             api,

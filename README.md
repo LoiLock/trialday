@@ -1,4 +1,4 @@
-# app
+# Eerste Vue project
 
 ## Project setup
 ```
